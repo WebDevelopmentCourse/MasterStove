@@ -20,7 +20,6 @@ $(function () {
 
     // we set the ajaxLoaderImageFromTheStart
     addAjaxLoaderToFeedbackDiv();
-    $("div#feedback").show();
 });
 
 
@@ -81,6 +80,7 @@ function getFormValue() {
 
 function send2Server(str) {
     showAjaxLoader();
+     $("div#feedback").show();
     console.log("str: " + str);
     console.log("myEmail: " + myEmail);
     var theServer = "https://wwws.hit.ac.il/facebook/telemDev/TelemWebDevelopmentCourseContact_me.php";
