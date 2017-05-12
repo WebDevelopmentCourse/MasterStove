@@ -13,6 +13,7 @@ $(function () {
     myEmail = $("input#myEmail").val();
     var theEmailString = "";
     $("input[type='submit']").click(function () {
+         $("div#feedback").show();
         theEmailString = getFormValue();
         send2Server(theEmailString);
         return false;
@@ -80,7 +81,6 @@ function getFormValue() {
 
 function send2Server(str) {
     showAjaxLoader();
-     $("div#feedback").show();
     console.log("str: " + str);
     console.log("myEmail: " + myEmail);
     var theServer = "https://wwws.hit.ac.il/facebook/telemDev/TelemWebDevelopmentCourseContact_me.php";
@@ -105,10 +105,9 @@ function send2Server(str) {
                 $("div#feedback").append(failFeedback);
                 $("div#feedback").css("color", "red");
             }
-            
-             setTimeout(function () {
+
             $("div#feedback").fadeOut("slow");
-        }, 2000);
+
         }
 
     });
