@@ -104,6 +104,10 @@ function send2Server(str) {
                 $("div#feedback").append(failFeedback);
                 $("div#feedback").css("color", "red");
             }
+            
+             setTimeout(function () {
+            $("div#feedback").fadeOut();
+        }, 1000);
         }
 
     });
