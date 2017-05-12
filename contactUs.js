@@ -1,11 +1,11 @@
 var myEmail = "";
-var successFeedback = "ההודעה נשלחה בהצלחה";
-var failFeedback = "היתה בעיה בשליחת ההודעה, אנא נסה מאוחר יותר";
+var successFeedback = "the message was sent successfully";
+var failFeedback = "There was a problem sending the message, please try again later";
 var serverName = "";
 //serverName = "http://webdevelopmentcourse.telem-hit.net/"
-serverName = "https://webdevelopmentcourse.github.io/contactUs/WebDevelopmentCourse/";
+serverName = "https://webdevelopmentcourse.github.io/MasterStove/";
 
-var ajaxLoaderImageURL = serverName + "images/ajaxLoader.gif";
+var ajaxLoaderImageURL = serverName + "ajaxLoader.gif";
 
 
 
