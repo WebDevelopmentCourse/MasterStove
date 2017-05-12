@@ -107,7 +107,7 @@ function send2Server(str) {
             
              setTimeout(function () {
             $("div#feedback").fadeOut("slow");
-        }, 1000);
+        }, 2000);
         }
 
     });
