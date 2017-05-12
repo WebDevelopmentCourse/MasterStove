@@ -14,6 +14,8 @@ $(function () {
     var theEmailString = "";
     $("input[type='submit']").click(function () {
          $("div#feedback").show();
+        $("div#feedback").html("");
+          addAjaxLoaderToFeedbackDiv();
         theEmailString = getFormValue();
         send2Server(theEmailString);
         return false;
