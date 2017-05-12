@@ -46,7 +46,7 @@ function getFormValue() {
                     var optionValue = $("#" + theId).val();
                     theValue = $("#" + theId).find("option[value='" + optionValue + "']").text();
 
-                } else if ($("input#" + theId).is(":visible") && ($("input#" + theId).attr("type") == "text" || $("input#" + theId).attr("type") == "password")) {
+                } else if ($("input#" + theId).is(":visible") && ($("input#" + theId).attr("type") == "text" || $("input#" + theId).attr("type") == "password" || $("input#" + theId).attr("type") == "email")) {
                     theValue = $("#" + theId).val();
                 }
                 else {
