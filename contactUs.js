@@ -106,7 +106,7 @@ function send2Server(str) {
             }
             
              setTimeout(function () {
-            $("div#feedback").fadeOut();
+            $("div#feedback").fadeOut(1000);
         }, 1000);
         }
 
