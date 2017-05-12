@@ -20,6 +20,7 @@ $(function () {
 
     // we set the ajaxLoaderImageFromTheStart
     addAjaxLoaderToFeedbackDiv();
+    $("div#feedback").show();
 });
 
 
