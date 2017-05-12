@@ -55,10 +55,10 @@ function getFormValue() {
                         }
                     else if ($("input#" + theId).attr("type") == "checkbox") {
                         if ($("input#" + theId).is(':checked')) {
-                                theValue = "כן";
+                                theValue = "Yes";
                             }
                             else {
-                                theValue = "לא";
+                                theValue = "No";
                             }
                         }
                    
